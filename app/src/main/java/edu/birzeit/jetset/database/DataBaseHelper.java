@@ -98,13 +98,13 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         contentValues.put("LAST_NAME", passenger.getLastName());
         contentValues.put("HASHED_PASSWORD", passenger.getHashedPassword());
         contentValues.put("ROLE", "Passenger");
-        contentValues.put("PASSPORT_NUMBER", passenger.getPassportNumber());
-        contentValues.put("PASSPORT_ISSUE_DATE", passenger.getPassportIssueDate());
-        contentValues.put("PASSPORT_ISSUE_PLACE", passenger.getPassportIssuePlace());
-        contentValues.put("PASSPORT_EXPIRATION_DATE", passenger.getPassportExpiryDate());
-        contentValues.put("FOOD_PREFERENCE", passenger.getFoodPreference());
-        contentValues.put("DATE_OF_BIRTH", passenger.getDateOfBirth());
-        contentValues.put("NATIONALITY", passenger.getNationality());
+//        contentValues.put("PASSPORT_NUMBER", passenger.getPassportNumber());
+//        contentValues.put("PASSPORT_ISSUE_DATE", passenger.getPassportIssueDate());
+//        contentValues.put("PASSPORT_ISSUE_PLACE", passenger.getPassportIssuePlace());
+//        contentValues.put("PASSPORT_EXPIRATION_DATE", passenger.getPassportExpiryDate());
+//        contentValues.put("FOOD_PREFERENCE", passenger.getFoodPreference());
+//        contentValues.put("DATE_OF_BIRTH", passenger.getDateOfBirth());
+//        contentValues.put("NATIONALITY", passenger.getNationality());
 
         sqLiteDatabase.insert("USER", null, contentValues);
     }
@@ -185,13 +185,13 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         contentValues.put("LAST_NAME", passenger.getLastName());
         contentValues.put("HASHED_PASSWORD", passenger.getHashedPassword());
         contentValues.put("ROLE", "Passenger");
-        contentValues.put("PASSPORT_NUMBER", passenger.getPassportNumber());
-        contentValues.put("PASSPORT_ISSUE_DATE", passenger.getPassportIssueDate());
-        contentValues.put("PASSPORT_ISSUE_PLACE", passenger.getPassportIssuePlace());
-        contentValues.put("PASSPORT_EXPIRATION_DATE", passenger.getPassportExpiryDate());
-        contentValues.put("FOOD_PREFERENCE", passenger.getFoodPreference());
-        contentValues.put("DATE_OF_BIRTH", passenger.getDateOfBirth());
-        contentValues.put("NATIONALITY", passenger.getNationality());
+//        contentValues.put("PASSPORT_NUMBER", passenger.getPassportNumber());
+//        contentValues.put("PASSPORT_ISSUE_DATE", passenger.getPassportIssueDate());
+//        contentValues.put("PASSPORT_ISSUE_PLACE", passenger.getPassportIssuePlace());
+//        contentValues.put("PASSPORT_EXPIRATION_DATE", passenger.getPassportExpiryDate());
+//        contentValues.put("FOOD_PREFERENCE", passenger.getFoodPreference());
+//        contentValues.put("DATE_OF_BIRTH", passenger.getDateOfBirth());
+//        contentValues.put("NATIONALITY", passenger.getNationality());
 
         return sqLiteDatabase.update("USER", contentValues, "EMAIL = ?", new String[]{oldEmail});
     }
