@@ -243,9 +243,9 @@ public class EditProfilePassengerFragment extends Fragment {
             editIssueDate = secondPageView.findViewById(R.id.editTextDate);
             editExpiryDate = secondPageView.findViewById(R.id.editTextDate2);
             editDateOfBirth = secondPageView.findViewById(R.id.editTextDate3);
-//            spinnerCountry = secondPageView.findViewById(R.id.spinnerCountry);
-//            spinnerFoodPreference = secondPageView.findViewById(R.id.spinner);
-//            spinnerNationality = secondPageView.findViewById(R.id.spinnerNationality);
+            spinnerCountry = secondPageView.findViewById(R.id.spinnerCountry);
+            spinnerFoodPreference = secondPageView.findViewById(R.id.spinner);
+            spinnerNationality = secondPageView.findViewById(R.id.spinnerNationality);
 
             Locale defaultLocale = Locale.getDefault();
             String defaultCountry = defaultLocale.getDisplayCountry();
